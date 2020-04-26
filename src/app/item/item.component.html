@@ -1,0 +1,15 @@
+<h3>Book Info:</h3>
+<div> <strong> Fullname </strong> {{book.fullname}} </div>
+<div> <strong> Authors </strong> {{book.authors}} </div>
+<div> <strong> Genre </strong> {{book.genre}} </div>
+<div> <strong> Description </strong> {{book.description}} </div>
+
+<h3>Posts:</h3>
+<ul>
+  <li *ngFor="let post of posts">{{post.description}}</li>
+</ul>
+
+<nav>
+    <a href="" [routerLink]="['/books']">Books</a>
+</nav>
+<router-outlet></router-outlet>
